@@ -1,0 +1,17 @@
+embedding_size: 512
+feat_embed_dim: 512
+weight_size: [256, 64]
+
+learning_rate_scheduler: [0.96, 50]
+lambda_coeff: 0.9
+reg_weight: 1e-4
+
+cf_model: lightgcn
+mess_dropout: [0.1, 0.1]
+n_layers: [2,3]
+knn_k: 5
+
+learning_rate: [0.00003]
+
+hyper_parameters: ["learning_rate", "n_layers"]
+

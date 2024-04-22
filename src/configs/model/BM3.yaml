@@ -1,0 +1,15 @@
+embedding_size: 512
+feat_embed_dim: 512
+
+n_layers: [2, 3]
+dropout: [0.3, 0.4]
+reg_weight: 1e-4
+cl_weight: 2.0
+
+learning_rate: [0.0005, 0.0001]
+train_batch_size: 1024
+
+use_neg_sampling: False
+
+hyper_parameters: ["n_layers", "dropout", "learning_rate"]
+

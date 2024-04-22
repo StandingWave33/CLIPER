@@ -1,0 +1,8 @@
+embedding_size: [512]
+n_layers: [3]
+aggr_mode: 'add'
+reg_weight: 1e-4
+learning_rate: [0.0001]
+train_batch_size: [1024]
+hyper_parameters: ["embedding_size", "n_layers", "learning_rate", "train_batch_size"]
+

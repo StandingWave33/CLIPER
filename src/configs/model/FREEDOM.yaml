@@ -1,0 +1,18 @@
+embedding_size: 1024  # sports 1024
+feat_embed_dim: 1024
+weight_size: [64,64]
+
+lambda_coeff: 0.9
+reg_weight: 1e-04
+learning_rate: [1e-1, 5e-5, 1e-5]
+
+# Multi-modal layer
+n_mm_layers: 2
+# Interaction layer
+n_ui_layers: 3
+knn_k: 5
+train_batch_size: [512,1024]    # sports 2048
+mm_image_weight: 0.3
+dropout: 0.8
+temperature: [0.1]
+hyper_parameters: ["temperature", "train_batch_size", "learning_rate"]

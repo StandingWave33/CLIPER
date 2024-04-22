@@ -1,0 +1,14 @@
+recdim: [512,1024]
+layer_num: [2,3]
+reg: 0.0001
+ssl_task: 'FAC'
+learning_rate: [0.00001, 0.0001]
+weight_decay: 1e-4
+ssl_alpha: 0.1
+ssl_temp: 0.1
+dropout_rate: 0.3
+mm_fusion_mode: 'concat'
+temp: 0.2
+init: 'xavier'
+adj_type: 'pre'
+hyper_parameters: ["learning_rate", "layer_num", "recdim"]
